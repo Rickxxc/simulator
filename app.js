@@ -205,7 +205,6 @@ class SimuladoApp {
           - ${numAlternativas} alternativas plausíveis (${Array.from({length: numAlternativas}, (_, i) => String.fromCharCode(65 + i)).join(', ')})
           - Apenas uma alternativa correta
           - Explicação detalhada do gabarito
-          - Sempre Revise as questões e o gabarito para não haver erros de enunciado, de questões ou de gabarito
           
           Responda APENAS com um JSON array onde cada questão tem este formato:
           {
