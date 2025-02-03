@@ -1,5 +1,3 @@
-import Menu from 'https://rickxxc.github.io/simulator/menu.js';
-
 class SimuladoApp {
   constructor() {
     // Insert menu at the start of the container
