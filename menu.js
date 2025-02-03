@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://rickxxc.github.io/simulator/styles.css">
+
 class Menu {
   static create() {
     const header = document.createElement('header');
