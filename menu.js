@@ -38,7 +38,7 @@ class Menu {
                 <path fill="currentColor" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
               </svg>
               <span>Home</span>
-            </a>
+            <a href="go:sim" class="menu-item">
             <button class="menu-item" data-modal="sobre">
               <svg width="24" height="24" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
