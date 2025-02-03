@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="https://rickxxc.github.io/simulator/styles.css">
 class Menu {
   static create() {
     const header = document.createElement('header');
@@ -32,7 +31,7 @@ class Menu {
           </div>
           
           <div class="menu-items">
-            <a href="go:sim" class="menu-item">
+            <a href="/" class="menu-item">
               <svg width="24" height="24" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
               </svg>
