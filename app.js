@@ -7,66 +7,99 @@ class SimuladoApp {
     container.insertBefore(Menu.create(), container.firstChild);
 
     this.cargos = {
-      inss: {
-        'Técnico do Seguro Social': {
-          disciplinas: ['Direito Constitucional', 'Direito Administrativo', 'Ética no Serviço Público', 'Legislação Previdenciária', 'Informática Básica', 'Atendimento ao Público'],
-          banca: 'Cebraspe',
-          tipo: 'certo_errado'
+      "inss": {
+        "Técnico do Seguro Social": {
+            "disciplinas": [
+                "Língua Portuguesa", "Raciocínio Lógico", "Noções de Informática", 
+                "Ética no Serviço Público", "Regime Jurídico Único", "Noções de Direito Constitucional", 
+                "Noções de Direito Administrativo", "Legislação Previdenciária"
+            ],
+            "banca": "Cebraspe",
+            "tipo": "certo_errado"
         },
-        'Analista do Seguro Social': {
-          disciplinas: ['Direito Constitucional', 'Direito Administrativo', 'Direito Previdenciário', 'Legislação Previdenciária', 'Gestão Pública', 'Serviço Social'],
-          banca: 'Cebraspe',
-          tipo: 'certo_errado'
+        "Analista do Seguro Social": {
+            "disciplinas": [
+                "Língua Portuguesa", "Raciocínio Lógico", "Noções de Informática", 
+                "Ética no Serviço Público", "Regime Jurídico Único", "Direito Constitucional", 
+                "Direito Administrativo", "Direito Previdenciário", "Conhecimentos Específicos"
+            ],
+            "banca": "Cebraspe",
+            "tipo": "certo_errado"
         }
-      },
-      bb: {
-        'Escriturário - Agente Comercial': {
-          disciplinas: ['Matemática Financeira', 'Probabilidade e Estatística', 'Conhecimentos Bancários', 'Vendas e Negociação', 'Atendimento', 'Português'],
-          banca: 'Cesgranrio',
-          tipo: 'multipla_escolha',
-          alternativas: 5
+    },
+    "bb": {
+        "Escriturário - Agente Comercial": {
+            "disciplinas": [
+                "Língua Portuguesa", "Língua Inglesa", "Matemática", "Atualidades do Mercado Financeiro", 
+                "Conhecimentos Bancários", "Noções de Probabilidade e Estatística", "Noções de Informática", "Vendas e Negociação"
+            ],
+            "banca": "Cesgranrio",
+            "tipo": "multipla_escolha",
+            "alternativas": 5
         },
-        'Escriturário - Agente de Tecnologia': {
-          disciplinas: ['Probabilidade e Estatística', 'Tecnologia da Informação', 'Banco de Dados', 'Desenvolvimento de Sistemas', 'Agile', 'Segurança da Informação'],
-          banca: 'Cesgranrio',
-          tipo: 'multipla_escolha',
-          alternativas: 5
+        "Escriturário - Agente de Tecnologia": {
+            "disciplinas": [
+                "Língua Portuguesa", "Língua Inglesa", "Matemática", "Atualidades do Mercado Financeiro", 
+                "Conhecimentos Bancários", "Probabilidade e Estatística", "Tecnologia da Informação"
+            ],
+            "banca": "Cesgranrio",
+            "tipo": "multipla_escolha",
+            "alternativas": 5
         }
-      },
-      caixa: {
-        'Técnico Bancário Novo': {
-          disciplinas: ['Matemática Financeira', 'Conhecimentos Bancários', 'Atendimento', 'Português', 'Legislação Específica', 'Tecnologia da Informação'],
-          banca: 'Cesgranrio',
-          tipo: 'multipla_escolha',
-          alternativas: 5
+    },
+    "caixa": {
+        "Técnico Bancário Novo": {
+            "disciplinas": [
+                "Língua Portuguesa", "Matemática", "Conhecimentos Bancários", "Atendimento", 
+                "Ética", "História e Estatuto da Caixa", "Legislação Específica", "Tecnologia da Informação"
+            ],
+            "banca": "Cesgranrio",
+            "tipo": "multipla_escolha",
+            "alternativas": 5
         }
-      },
-      correios: {
-        'Carteiro': {
-          disciplinas: ['Conhecimentos Específicos', 'Matemática', 'Português', 'Informática', 'Legislação dos Correios', 'Atendimento ao Cliente'],
-          banca: 'FGV',
-          tipo: 'multipla_escolha',
-          alternativas: 4
+    },
+    "correios": {
+        "Carteiro": {
+            "disciplinas": [
+                "Língua Portuguesa", "Matemática", "Conhecimentos Específicos", "Legislação Aplicada", "Segurança do Trabalho"
+            ],
+            "banca": "FGV",
+            "tipo": "multipla_escolha",
+            "alternativas": 4
         },
-        'Operador de Triagem': {
-          disciplinas: ['Logística', 'Matemática', 'Português', 'Raciocínio Lógico', 'Legislação dos Correios', 'Operações Postais'],
-          banca: 'FGV',
-          tipo: 'multipla_escolha',
-          alternativas: 4
-        }
-      },
-      petrobras: {
-        'Técnico de Administração e Controle': {
-          disciplinas: ['Matemática', 'Português', 'Conhecimentos Específicos', 'Inglês', 'Legislação', 'Informática'],
-          banca: 'Cesgranrio',
-          tipo: 'multipla_escolha',
-          alternativas: 5
+        "Operador de Triagem": {
+            "disciplinas": [
+                "Língua Portuguesa", "Matemática", "Conhecimentos Específicos", "Legislação Aplicada", "Segurança do Trabalho"
+            ],
+            "banca": "FGV",
+            "tipo": "multipla_escolha",
+            "alternativas": 4
         },
-        'Técnico de Operação': {
-          disciplinas: ['Matemática', 'Física', 'Química', 'Segurança Industrial', 'Legislação', 'Inglês'],
-          banca: 'Cesgranrio',
-          tipo: 'multipla_escolha',
-          alternativas: 5
+        "Atendente Comercial": {
+            "disciplinas": [
+                "Língua Portuguesa", "Matemática", "Informática", "Atendimento ao Cliente", "Legislação Aplicada"
+            ],
+            "banca": "FGV",
+            "tipo": "multipla_escolha",
+            "alternativas": 4
+        }
+    },
+    "petrobras": {
+        "Técnico de Administração e Controle": {
+            "disciplinas": [
+                "Língua Portuguesa", "Matemática", "Informática", "Inglês", "Conhecimentos Específicos"
+            ],
+            "banca": "Cesgranrio",
+            "tipo": "multipla_escolha",
+            "alternativas": 5
+        },
+        "Técnico de Operação": {
+            "disciplinas": [
+                "Língua Portuguesa", "Matemática", "Física", "Química", "Inglês", "Conhecimentos Específicos"
+            ],
+            "banca": "Cesgranrio",
+            "tipo": "multipla_escolha",
+            "alternativas": 5
         }
       }
     };
