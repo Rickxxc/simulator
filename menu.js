@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="https://rickxxc.github.io/simulator/styles.css">
-
 class Menu {
   static create() {
     const header = document.createElement('header');
@@ -31,13 +30,14 @@ class Menu {
               </svg>
             </button>
           </div>
-                    <div class="menu-items">
-   <a href="https://seusite.com.br" class="menu-item">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-            <path fill="currentColor" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
-        </svg>
-        <span>Home</span>
-    </a>
+          
+          <div class="menu-items">
+            <a href="go:sim" class="menu-item">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
+              </svg>
+              <span>Home</span>
+            </a>
             <button class="menu-item" data-modal="sobre">
               <svg width="24" height="24" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
