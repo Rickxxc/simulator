@@ -166,6 +166,7 @@ class SimuladoApp {
           - ${numAlternativas} alternativas plausíveis (${Array.from({length: numAlternativas}, (_, i) => String.fromCharCode(65 + i)).join(', ')})
           - Apenas uma alternativa correta
           - Explicação detalhada do gabarito
+          - Revise as questões para não haver erros de enunciado ou gabarito
           
           Responda APENAS com um JSON array onde cada questão tem este formato:
           {
@@ -181,7 +182,7 @@ class SimuladoApp {
           }`;
       }
 
-      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${this.GEMINI_API_KEY}`, {
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/ gemini-1.5-flash-8b-001:generateContent?key=${this.GEMINI_API_KEY}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
