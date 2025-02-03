@@ -1,5 +1,11 @@
+import Menu from './menu.js';
+
 class SimuladoApp {
   constructor() {
+    // Insert menu at the start of the container
+    const container = document.querySelector('.container');
+    container.insertBefore(Menu.create(), container.firstChild);
+
     this.cargos = {
       inss: {
         'Técnico do Seguro Social': {
@@ -166,7 +172,7 @@ class SimuladoApp {
           - ${numAlternativas} alternativas plausíveis (${Array.from({length: numAlternativas}, (_, i) => String.fromCharCode(65 + i)).join(', ')})
           - Apenas uma alternativa correta
           - Explicação detalhada do gabarito
-          - Revise as questões para não haver erros de enunciado ou gabarito
+          - Sempre Revise as questões e o gabarito para não haver erros de enunciado, de questões ou de gabarito
           
           Responda APENAS com um JSON array onde cada questão tem este formato:
           {
@@ -182,7 +188,7 @@ class SimuladoApp {
           }`;
       }
 
-      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/ gemini-1.5-flash-8b-001:generateContent?key=${this.GEMINI_API_KEY}`, {
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${this.GEMINI_API_KEY}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -194,10 +200,11 @@ class SimuladoApp {
             }]
           }],
           generationConfig: {
-            temperature: 0.7,
-            topK: 40,
-            topP: 0.8,
-            maxOutputTokens: 8192,
+            "temperature": 0.2,
+    "topK": 40,
+    "topP": 1,
+    "maxOutputTokens": 8192,
+    "responseMimeType": "text/plain"
           }
         })
       });
