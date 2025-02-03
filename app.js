@@ -1,4 +1,4 @@
-import Menu from './menu.js';
+import Menu from 'https://rickxxc.github.io/simulator/menu.js';
 
 class SimuladoApp {
   constructor() {
