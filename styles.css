@@ -752,3 +752,38 @@ label {
     height: 32px;
   }
 }
+
+.disclaimer {
+  background-color: #fff3cd;
+  border-top: 3px solid #ffeeba;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.disclaimer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.disclaimer p {
+  color: #856404;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.disclaimer strong {
+  color: #694a03;
+}
+
+@media (max-width: 600px) {
+  .disclaimer {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .disclaimer p {
+    font-size: 0.8rem;
+  }
+}
